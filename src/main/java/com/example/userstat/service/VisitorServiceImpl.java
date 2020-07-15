@@ -3,6 +3,8 @@ package com.example.userstat.service;
 import com.example.userstat.model.JsonResponse;
 import com.example.userstat.model.Visitor;
 import com.example.userstat.repository.VisitorRepository;
+import org.springframework.scheduling.annotation.Async;
+import org.springframework.scheduling.annotation.EnableAsync;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
@@ -18,6 +20,7 @@ public class VisitorServiceImpl implements VisitorService {
     }
 
     @Override
+    @Async("asyncExecutor")
     public void createVisit(Visitor visitor) {
         visitorRepository.save(visitor);
     }
