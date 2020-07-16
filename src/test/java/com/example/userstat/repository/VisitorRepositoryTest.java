@@ -22,7 +22,7 @@ class VisitorRepositoryTest {
     private VisitorRepository visitorRepoMock;
 
     @BeforeEach
-    public void setUp() throws Exception {
+    public void setUp() {
         MockitoAnnotations.initMocks(this);
     }
 

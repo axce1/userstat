@@ -7,7 +7,7 @@ import java.sql.Date;
 
 public interface VisitorService {
 
-    void createVisit(Visitor visitor);
+    Visitor createVisit(Visitor visitor);
 
     JsonResponse dayAmountHits();
 

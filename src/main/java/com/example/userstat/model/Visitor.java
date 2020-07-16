@@ -1,7 +1,6 @@
 package com.example.userstat.model;
 
-import lombok.AllArgsConstructor;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -10,6 +9,9 @@ import java.sql.Date;
 @Entity
 @AllArgsConstructor
 @NoArgsConstructor
+@Getter
+@Setter
+@EqualsAndHashCode
 public class Visitor implements Serializable {
 
     @Id
