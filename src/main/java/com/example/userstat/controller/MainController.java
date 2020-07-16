@@ -3,7 +3,6 @@ package com.example.userstat.controller;
 import com.example.userstat.model.JsonResponse;
 import com.example.userstat.model.Visitor;
 import com.example.userstat.service.VisitorServiceImpl;
-import org.springframework.scheduling.annotation.Async;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
