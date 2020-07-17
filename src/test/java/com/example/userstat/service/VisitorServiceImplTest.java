@@ -1,6 +1,6 @@
 package com.example.userstat.service;
 
-import com.example.userstat.model.JsonResponse;
+import com.example.userstat.dto.JsonResponse;
 import com.example.userstat.model.Visitor;
 import com.example.userstat.repository.VisitorRepository;
 import org.junit.jupiter.api.BeforeEach;

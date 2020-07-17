@@ -1,4 +1,4 @@
-package com.example.userstat.model;
+package com.example.userstat.dto;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;

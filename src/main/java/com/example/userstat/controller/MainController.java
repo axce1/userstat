@@ -1,8 +1,9 @@
 package com.example.userstat.controller;
 
-import com.example.userstat.model.JsonResponse;
+import com.example.userstat.dto.JsonResponse;
 import com.example.userstat.model.Visitor;
 import com.example.userstat.service.VisitorServiceImpl;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -31,7 +32,6 @@ public class MainController {
             HttpServletRequest request
     ) {
         HttpSession session = request.getSession();
-        session.setMaxInactiveInterval(100500);
 
         Visitor visitor = new Visitor(id, page_id, Date.valueOf(LocalDate.now()), session.getId());
         visitorService.createVisit(visitor);
